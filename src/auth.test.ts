@@ -3,15 +3,15 @@ import { IncomingHttpHeaders } from "http";
 import { getAPIKey } from "./api/auth.js";
 
 const nullAuth: IncomingHttpHeaders = {
-    "potato": undefined
-}
+  potato: undefined,
+};
 
 const incorrectAuth: IncomingHttpHeaders = {
-    "authorization": "Basic QWxhZGRpbjpPcGVuU2VzYW1l"
-}
+  authorization: "Basic QWxhZGRpbjpPcGVuU2VzYW1l",
+};
 
 const correct: IncomingHttpHeaders = {
-  "authorization": "ApiKey QWxhZGRpbjpPcGVuU2VzYW1l",
+  authorization: "ApiKey QWxhZGRpbjpPcGVuU2VzYW1l",
 };
 
 describe("authorization", () => {
